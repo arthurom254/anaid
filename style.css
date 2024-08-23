@@ -1,103 +1,3 @@
-:root {
-    --atom-blue: #0d6efd;
-    --atom-indigo: #6610f2;
-    --atom-purple: #6f42c1;
-    --atom-pink: #eb38a6;
-    --atom-red: #dc3545;
-    --atom-orange: #fd7e14;
-    --atom-yellow: #ffc107;
-    --atom-green: #198754;
-    --atom-teal: #008696;
-    --atom-cyan: #00b9fe;
-    --atom-black: #000;
-    --atom-white: #fff;
-    --atom-gray: #6c757d;
-    --atom-gray-dark: #343a40;
-    --atom-transparent: transparent;
-    --atom-medium-blue: #374886;
-    --atom-mint: #4fe2c1;
-    --atom-mint-highlight: #e5fff9;
-    --atom-midnight-light: #28386f;
-    --atom-midnight: #04003f;
-    --atom-pretty-blue: #244fe7;
-    --atom-pretty-blue-highlight: #dee5fb;
-    --atom-ultraviolet: #6147d7;
-    --atom-amethyst: #8700e2;
-    --atom-daffodil: #ffed00;
-    --atom-purple-monster: #4d1096;
-    --atom-cerulean: #009ee0;
-    --atom-fuchsia: #d800e3;
-    --atom-lava: #e2001a;
-    --atom-denim: #173183;
-    --atom-glacier: #006ab2;
-    --atom-shamrock: #009036;
-    --atom-pistachio: #97be0d;
-    --atom-squash: #f2aa00;
-    --atom-pumpkin: #f26c00;
-    --atom-gray-100: #f8f9fa;
-    --atom-gray-200: #e9ecef;
-    --atom-gray-300: #dee2e6;
-    --atom-gray-400: #ced4da;
-    --atom-gray-500: #adb5bd;
-    --atom-gray-600: #6c757d;
-    --atom-gray-700: #495057;
-    --atom-gray-800: #343a40;
-    --atom-gray-900: #212529;
-    --atom-gray-01: #f0f2fa;
-    --atom-gray-01-highlight: #ecfaff;
-    --atom-gray-02: #b7bac9;
-    --atom-gray-03: #717488;
-    --atom-gray-04: #3a3b41;
-    --atom-primary: #244fe7;
-    --atom-secondary: #374886;
-    --atom-success: #4fe2c1;
-    --atom-info: #6147d7;
-    --atom-warning: #ffc107;
-    --atom-danger: #eb38a6;
-    --atom-light: #fff;
-    --atom-dark: #04003f;
-    --atom-app-primary: #04003f;
-    --atom-app-secondary: #374886;
-    --atom-app-primary-bg: #fff;
-    --atom-app-secondary-bg: #f0f2fa;
-    --atom-app-tertiary-bg: #fff;
-    --atom-primary-rgb: 36, 79, 231;
-    --atom-secondary-rgb: 55, 72, 134;
-    --atom-success-rgb: 79, 226, 193;
-    --atom-info-rgb: 97, 71, 215;
-    --atom-warning-rgb: 255, 193, 7;
-    --atom-danger-rgb: 235, 56, 166;
-    --atom-light-rgb: 255, 255, 255;
-    --atom-dark-rgb: 4, 0, 63;
-    --atom-white-rgb: 255, 255, 255;
-    --atom-black-rgb: 0, 0, 0;
-    --atom-body-color-rgb: 33, 37, 41;
-    --atom-body-bg-rgb: 255, 255, 255;
-    --atom-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --atom-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --atom-gradient: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));
-    --atom-body-font-family: var(--atom-font-sans-serif);
-    --atom-body-font-size: 1rem;
-    --atom-body-font-weight: 400;
-    --atom-body-line-height: 1.5;
-    --atom-body-color: #212529;
-    --atom-body-bg: #fff;
-    --atom-border-width: 1px;
-    --atom-border-style: solid;
-    --atom-border-color: #dee2e6;
-    --atom-border-color-translucent: rgba(0,0,0,.175);
-    --atom-border-radius: 0.375rem;
-    --atom-border-radius-sm: 0.25rem;
-    --atom-border-radius-lg: 0.5rem;
-    --atom-border-radius-xl: 1rem;
-    --atom-border-radius-2xl: 2rem;
-    --atom-border-radius-pill: 50rem;
-    --atom-link-color: #244fe7;
-    --atom-link-hover-color: #1d3fb9;
-    --atom-code-color: #eb38a6;
-    --atom-highlight-bg: #fff3cd;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -105,129 +5,41 @@ body{
     font-family:sans-serif;
 }
 
-.atom-navBar{
-    /* background-color: var(--atom-app-primary); */
-    opacity: 0.9 ;
-    height: 5rem ;
-    display: flex ;
-    padding: 0 5rem ;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    position: fixed;
-    z-index: 1;
-    width: 90%;
+
+.main{
+    background-color: rgb(187, 187, 201);
+    position: relative;
+    padding: 30px ;
+    margin-top: 0 ;
 }
 
-.navItem, .navItem span{
-    margin: 0 10px ;
-    padding: 10px;
-    display: flex;
-    transition: .5s ease-in-out ;
-}
-.navItem span, .button{
-    border:  1px solid ;
-    border-color: var(--atom-border-color);
-    color: var(--atom-gray-01-highlight);
-    cursor: pointer;
-    background-color: var(--atom-medium-blue);
-}
-.navItem span:hover, .button:hover {
-    background-color: var(--atom-gray-01-highlight);
-    color: var(--atom-app-primary);
-}
-.navBrand{
-    font-size: 2rem ;
-    color: var(--atom-white);
-}
 
-.heroSection{
-    background-color: #04003f!important;
-    height: 100vh;
-    opacity: 1;
-    overflow: hidden ;
+.h{
+    font-family: Poppins,sans-serif;
+    font-weight: 900;
+    color: rgb(31 31 31 / 1);
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    opacity: 0.7;
 }
-
-.circle-1, .circle-2 {
-    background: linear-gradient(132deg, rgba(10, 14, 92, 0) 37.64%, #2c57d1 94%);
-    border-radius: 50%;
-    box-shadow: 0 .25rem .25rem 0 rgba(0, 0, 0, .25);
-    height: 67rem;
-    opacity: .75;
-    position: absolute;
-    top: 0;
-    transform: translateY(-10%);
-    width: 67rem;
-}
-.circle-2 {
-    right: 45%;
-}
-
-.content{
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--atom-app-primary-bg);
-}
-
-code span{
-    color: var(--atom-red);
-}
-
-.my-pic{
-    height: 20rem;
-    aspect-ratio: 1/1;
-    border-radius:50% 50% 50% 5px   ;
-}
-.narrow{
-    font-weight: 200;
-}
-.heading{
-    font-size: 40px ;
+.sh{
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    color: rgb(31 31 31 / 1);
+    font-size: 25px;
     padding: 0;
     margin: 0;
 }
+p{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 1rem;
+    max-width: 48rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(92, 92, 102);
+    opacity: 1;
 
-.about-me-btn{
-    padding: 10px 20px ;
-    position: absolute;
-    right: 20%;
-    top: 50%;
-    font-size: 1.5rem ;
-}
-
-.main{
-    /* height: 300px; */
-    background-color: var(--atom-gray);
-    position: relative;
-}
-
-.tech-stach{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px ;
-    /* transform: rotate(12deg ); */
-}
-.marquee{    
-    perspective: 500px;
-}
-.stack-img{
-    background-color: var(--atom-app-primary-bg);
-    background-image: url('./img/train.jpg');
-    padding: 20px ;
-    background-size: cover;
-    background-position: 0 0 ;
-    flex-wrap: wrap;
-    background-repeat: no-repeat;
-}
-
-.atom-w-100{
-    width:100vw;
-
-}
-.pos-relative{
-    position: relative;
 }
